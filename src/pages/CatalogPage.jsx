@@ -40,6 +40,7 @@ function CatalogPage() {
         <h2 className="catalogTitle">Каталог</h2>
 
         <Swiper
+          slidesPerView={2}
           modules={[Pagination]}
           pagination={{ clickable: true, bulletActiveClass: "my-bullet" }}
           onSlideChange={() => console.log("slide change")}
@@ -47,19 +48,25 @@ function CatalogPage() {
         >
           <SwriperSlideCustom>
             <Catalog path="cat1" name="Люстры" />
+          </SwriperSlideCustom>
+          <SwriperSlideCustom>
             <Catalog path="cat2" name="Светильники" />
           </SwriperSlideCustom>
-          <button className="button1">
-            Весь каталог <img src="/arrowIcon.svg" alt="Arrow Icon" />
-          </button>
           <SwriperSlideCustom>
             <Catalog path="cat3" name="Бра" />
+          </SwriperSlideCustom>
+          <SwriperSlideCustom>
             <Catalog path="cat4" name="Торшеры" />
           </SwriperSlideCustom>
           <SwriperSlideCustom>
             <Catalog path="cat5" name="Настольные лампы" />
+          </SwriperSlideCustom>
+          <SwriperSlideCustom>
             <Catalog path="cat6" name="Споты" />
           </SwriperSlideCustom>
+          <button className="button1">
+            Весь каталог <img src="/arrowIcon.svg" alt="Arrow Icon" />
+          </button>
         </Swiper>
       </SliderCatalogWrapper>
     </>

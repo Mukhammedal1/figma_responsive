@@ -80,7 +80,7 @@ export const CatalogSliderWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 50%;
+  width: 100%;
   height: 250px;
   background-color: #f2f2f2;
   border-radius: 20px;
