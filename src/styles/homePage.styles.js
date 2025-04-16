@@ -95,3 +95,11 @@ export const CatalogSliderWrapper = styled.div`
     display: none;
   }
 `;
+
+export const PopulyarniyPageWrapper = styled.div``;
+
+export const ContentPopulyarniyWrapper = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+`;
